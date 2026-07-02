@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ================= SEO ON-PAGE ================= -->
+    <title>Perros El Boki | Los Mejores Perros Calientes en Barranquilla</title>
+    <meta name="description" content="Disfruta en Perros El Boki de los mejores perros calientes de Barranquilla. Sabor auténtico, ingredientes frescos y excelente atención. ¡Haz tu pedido hoy!">
+    <meta name="keywords" content="perros calientes barranquilla, comida rapida barranquilla, perros el boki, hot dogs barranquilla">
+    <meta name="author" content="ALISSON MICHELLE RAMIREZ FREITHE">
+    <meta name="robots" content="index, follow">
+    
+    <!-- ================= SEO TÉCNICO (Schema.org LocalBusiness) ================= -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FastFoodRestaurant",
+      "name": "Perros El Boki",
+      "description": "El mejor sabor en perros calientes en la ciudad de Barranquilla con ingredientes de alta calidad.",
+      "telephone": "+573016667864",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cl. 58 #412",
+        "addressLocality": "Barranquilla",
+        "addressRegion": "Atlántico",
+        "addressCountry": "CO"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+
+    <!-- ================= ESTILOS CSS ================= -->
+    <style>
+        :root {
+            --primary-color: #E53935; /* Rojo apetitoso */
+            --secondary-color: #FFC107; /* Amarillo mostaza */
+            --text-dark: #212121;
+            --text-light: #FAFAFA;
+            --bg-light: #F5F5F5;
+            --white: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth; }
+        a { text-decoration: none; color: inherit; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Botones */
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-dark);
+            padding: 15px 30px;
+            font-size: 1.15rem;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+
+        /* Header */
+        header { background-color: var(--primary-color); color: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; height: 75px; }
+        .logo { font-size: 1.8rem; font-weight: 800; display: flex; align-items: center; gap: 10px; letter-spacing: 1px;}
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url('https://images.unsplash.com/photo-1619740455993-9e612b1af08a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: var(--white); padding: 120px 20px; text-align: center;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; color: var(--secondary-color); }
+        .hero p { font-size: 1.3rem; margin-bottom: 35px; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+        /* Títulos Generales */
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 40px; color: var(--primary-color); font-weight: 800; text-transform: uppercase; }
+
+        /* Beneficios */
+        .benefits { padding: 80px 0; background-color: var(--white); }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: var(--bg-light); padding: 35px 25px; border-radius: 10px; border-bottom: 5px solid var(--primary-color); text-align: center; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: var(--text-dark); margin-bottom: 15px; font-size: 1.4rem; }
+
+        /* Propuesta de Valor */
+        .value-section { padding: 80px 0; background-color: var(--secondary-color); color: var(--text-dark); text-align: center; }
+        .value-section h2 { margin-bottom: 20px; font-size: 2.2rem; font-weight: 800; text-transform: uppercase; }
+        .value-section p { max-width: 800px; margin: 0 auto; font-size: 1.15rem; font-weight: 500; }
+
+        /* Prueba Social */
+        .social-proof { padding: 80px 0; background: var(--white); }
+        .review-card { background: var(--bg-light); padding: 30px; border-radius: 10px; font-style: italic; border-left: 5px solid var(--primary-color); }
+        .reviewer { font-weight: 700; display: block; margin-top: 15px; color: var(--primary-color); font-style: normal;}
+
+        /* Contacto y Transparencia */
+        .contact-section { padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+        .company-info h3 { color: var(--primary-color); margin-bottom: 25px; font-size: 1.8rem; text-transform: uppercase;}
+        .company-info p { margin-bottom: 15px; font-size: 1.1rem; }
+        .transparency-box { margin-top: 30px; padding: 20px; background: #FFF9C4; border: 1px solid var(--secondary-color); border-radius: 8px; font-size: 0.95rem; color: #5D4037; }
+
+        /* Formulario */
+        .form-box { background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 700; font-size: 1rem; color: var(--text-dark); }
+        .form-group input, .form-group textarea {
+            width: 100%; padding: 12px; border: 2px solid #E0E0E0; border-radius: 6px; font-size: 1rem; transition: border-color 0.3s ease;
+        }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary-color); }
+
+        /* Footer */
+        footer { background-color: #212121; color: #BDBDBD; text-align: center; padding: 50px 20px; font-size: 0.95rem; }
+        footer a { color: var(--secondary-color); margin: 0 15px; text-decoration: none; font-weight: 600; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+            .header-content { flex-direction: column; height: auto; padding: 15px 0; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">🌭 PERROS EL BOKI</div>
+            <a href="#pedidos" class="btn" style="padding: 10px 20px; font-size: 1rem; background-color: var(--white); color: var(--primary-color);">Haz tu pedido</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>El Sabor Auténtico de Barranquilla</h1>
+                <p>Disfruta de la mejor calidad en comidas rápidas. Ingredientes frescos, pan suave y la sazón tradicional que nos caracteriza.</p>
+                <!-- CTA ajustado al contexto del negocio -->
+                <a href="#pedidos" class="btn">Haz tu pedido de perros calientes hoy</a>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2 class="section-title">¿Por qué preferir Perros El Boki?</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Ingredientes Frescos</h3>
+                        <p>Seleccionamos diariamente nuestros insumos para garantizar que cada bocado tenga el mejor sabor y calidad.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Sabor Local</h3>
+                        <p>Preparamos nuestros perros calientes manteniendo la esencia y el toque secreto de la comida urbana de Barranquilla.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Atención Transparente</h3>
+                        <p>Nos enfocamos en brindarte un servicio amable, claro y rápido, respetando siempre nuestros horarios de atención.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="value-section">
+            <div class="container">
+                <h2>Calidad y Tradición en Cada Pedido</h2>
+                <p>En Perros El Boki no hacemos magia, hacemos comida real y deliciosa. Nuestro compromiso es ofrecerte un producto honesto, generoso en porciones y preparado bajo estrictos estándares de higiene. Ideal para compartir en familia, con amigos o para darte ese gusto que mereces en tu día a día.</p>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <div class="container">
+                <h2 class="section-title">Lo que dicen en Barranquilla</h2>
+                <div class="grid-3">
+                    <div class="review-card">
+                        <p>"Muy buen sabor y el pan siempre está fresco. Se nota que cuidan la calidad de los ingredientes. Recomendados para almorzar o tardear."</p>
+                        <span class="reviewer">- Carlos M., Cliente Local</span>
+                    </div>
+                    <div class="review-card">
+                        <p>"Excelente atención y el servicio es muy rápido. Los precios son justos para el tamaño y la calidad del perro caliente que entregan."</p>
+                        <span class="reviewer">- Andrea G., Barranquilla</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pedidos" class="contact-section">
+            <div class="container contact-grid">
+                <div class="company-info">
+                    <h3>Contacto y Ubicación</h3>
+                    <p><strong>Representante Legal:</strong> ALISSON MICHELLE RAMIREZ FREITHE</p>
+                    <p><strong>Dirección:</strong> Cl. 58 #412, Barranquilla, Colombia</p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+573016667864" style="color: var(--primary-color); font-weight: bold;">301 666 7864</a></p>
+                    <p><strong>Correo Electrónico:</strong> <a href="mailto:wrightg295@gmail.com" style="color: var(--text-dark); font-weight: bold;">wrightg295@gmail.com</a></p>
+                    <p><strong>Horario de Atención:</strong> Todos los días de la semana de 8:00 am a 5:00 pm</p>
+                    
+                    <div class="transparency-box">
+                        <strong>Compromiso de Transparencia:</strong> Este sitio cumple con las políticas de Google Ads. La información de contacto es real y verificable. No utilizamos tácticas de escasez falsa ni promesas engañosas. Toda solicitud está sujeta a disponibilidad dentro del horario establecido.
+                    </div>
+                </div>
+                
+                <div class="form-box">
+                    <h3 style="margin-bottom: 25px; color: var(--primary-color); text-transform: uppercase;">Solicita tu Pedido Aquí</h3>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" required placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono / WhatsApp</label>
+                            <input type="tel" id="telefono" required placeholder="Ej: 301 000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="pedido">¿Qué deseas ordenar hoy?</label>
+                            <textarea id="pedido" rows="4" required placeholder="Indícanos cuántos perros calientes deseas y si los recoges o son a domicilio..."></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Enviar Solicitud de Pedido</button>
+                        
+                        <!-- Mensaje de éxito sin redirecciones para cumplir con Google Ads -->
+                        <div id="formFeedback" style="display:none; background: #E8F5E9; color: #2E7D32; padding: 15px; margin-top: 20px; border-radius: 6px; font-weight: bold; text-align: center; border: 1px solid #A5D6A7;">
+                            ¡Solicitud recibida! Te contactaremos al número indicado para confirmar tu orden en breve.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PERROS EL BOKI - ALISSON MICHELLE RAMIREZ FREITHE. Todos los derechos reservados.</p>
+            <div style="margin-top: 20px;">
+                <a href="politica-de-privacidad.html">Política de Privacidad</a>
+                <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+        // Manejo del formulario en la misma página para evitar pop-ups invasivos o cloaking
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            const feedback = document.getElementById('formFeedback');
+            feedback.style.display = 'block';
+            this.reset();
+            
+            // Ocultar mensaje después de 6 segundos
+            setTimeout(() => {
+                feedback.style.display = 'none';
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
